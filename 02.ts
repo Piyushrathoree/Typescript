@@ -113,7 +113,7 @@ const func3: function3 = (...m) => {
 interface productObj {
   name: string;
   price: number;
-  readonly id: string;
+  readonly id: string; // this property can't be changed later because its readonly 
 }
 
 type funcProduct = (product: productObj) => void;
