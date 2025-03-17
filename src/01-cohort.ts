@@ -1,3 +1,4 @@
+
 function showOutput(n: number) {
     console.log(n);
 }
@@ -49,5 +50,11 @@ function returnNum(callback: (n: number) => void): void {
 
 
 returnNum((n) => console.log(n));
+
+
+
+const greet = (name :string )=>console.log(`hello ${name}` ) // not allowed to work with 'any' type 
+
+greet('piyush')
 
 
