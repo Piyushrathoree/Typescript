@@ -35,4 +35,24 @@ function returnNum(callback) {
 }
 returnNum((n) => console.log(n));
 const greet = (name) => console.log(`hello ${name}`);
-greet('piyush');
+greet("piyush");
+class User {
+    constructor(name) {
+        this.name = name;
+    }
+    hello() {
+        console.log('hello devs');
+    }
+}
+class employee extends User {
+    constructor(name) {
+        super(name);
+        this.name = name;
+    }
+    greet() {
+        return "hey there";
+    }
+}
+const e = new employee('Piyush');
+e.hello();
+console.log(e.greet());
