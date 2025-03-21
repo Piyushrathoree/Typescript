@@ -78,3 +78,22 @@ console.log(e.greet());
 
  //  the interfaces and abstract classes let us do almost similar kind of work but there are some differences like 'we can define some default functions as well in abstract classes ' but this can't be done with the interfaces 
 // and the interface can also be implemented as well as extends but the abstract class can only be extends 
+ 
+
+
+ //types vs interfaces 
+
+ type one = {
+    name:string,
+    age:number 
+ }
+
+ interface One {
+    name :string ,
+    age :number
+ }
+
+ // they seems to be similar and also used similarly but there are few differences which are 
+ // ----  you can't implement a type in class like interfaces 
+ // ----  and types allows us to use various types at once by using union (|) and intersection (&)
+ 
