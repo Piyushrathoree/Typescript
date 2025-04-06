@@ -47,7 +47,8 @@ type user2 = {
     age:number,
     readonly id :string,
     state:string,
-    number:number
+    number:number,
+    email:string
 }
 
 type User4= Pick<user2 , 'name'|'id'>
